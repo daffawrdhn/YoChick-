@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://logic/DropZone.tscn" type="PackedScene" id=1]
+[ext_resource path="res://logic/Draggable.tscn" type="PackedScene" id=2]
+[ext_resource path="res://logic/ResetButton.gd" type="Script" id=3]
+
+[node name="DraggableExample" type="Node"]
+
+[node name="DropZone" parent="." instance=ExtResource( 1 )]
+position = Vector2( 261.453, 478.413 )
+
+[node name="Draggable" parent="." instance=ExtResource( 2 )]
+position = Vector2( 85.9474, 134.771 )
+
+[node name="Draggable2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 208.62, 233.293 )
+
+[node name="Draggable3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 96.962, 345.153 )
+
+[node name="Draggable4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 309.676, 113.253 )
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+margin_bottom = 50.0
+
+[node name="ResetButton" type="Button" parent="CenterContainer"]
+margin_left = 130.0
+margin_right = 230.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 100, 50 )
+text = "Reset"
+script = ExtResource( 3 )
+[connection signal="pressed" from="CenterContainer/ResetButton" to="CenterContainer/ResetButton" method="_on_pressed"]

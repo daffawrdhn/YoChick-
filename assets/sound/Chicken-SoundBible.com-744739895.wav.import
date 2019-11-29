@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Chicken-SoundBible.com-744739895.wav-b408a9aad372d46774f6ee3de1a141d3.sample"
+
+[deps]
+
+source_file="res://assets/sound/Chicken-SoundBible.com-744739895.wav"
+dest_files=[ "res://.import/Chicken-SoundBible.com-744739895.wav-b408a9aad372d46774f6ee3de1a141d3.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

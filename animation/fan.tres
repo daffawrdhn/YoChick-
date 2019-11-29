@@ -1,0 +1,21 @@
+[gd_resource type="AnimatedTexture" load_steps=5 format=2]
+
+[ext_resource path="res://assets/tool/fan_2.png" type="Texture" id=1]
+[ext_resource path="res://assets/tool/fan_3.png" type="Texture" id=2]
+[ext_resource path="res://assets/tool/fan_4.png" type="Texture" id=3]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/fan_1.png-59c1c166815ff5b94eb73778bdfef137.stex"
+
+[resource]
+flags = 4
+frames = 4
+fps = 40.0
+frame_0/texture = SubResource( 1 )
+frame_1/texture = ExtResource( 1 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 2 )
+frame_2/delay_sec = 0.0
+frame_3/texture = ExtResource( 3 )
+frame_3/delay_sec = 0.0
